@@ -16,7 +16,6 @@ class Solution:
                 Mininterval[0] = item[0]
             if Mininterval[1] >= item[1]:
                 Mininterval[1] = item[1]
-       # print(Mininterval)
         return Mininterval[0] * Mininterval[1]
 
 # @lc code=end
