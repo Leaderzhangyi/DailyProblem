@@ -12,4 +12,3 @@ class Solution:
         else:
             return 'a' * (n-1) + 'z'
 # @lc code=end
-
