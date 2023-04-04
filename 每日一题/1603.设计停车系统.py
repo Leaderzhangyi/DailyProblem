@@ -14,7 +14,6 @@ class ParkingSystem:
         if self.catDict[carType] != 0:
             self.catDict[carType] -= 1
             return True
-        
         return False
         
 
