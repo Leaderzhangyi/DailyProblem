@@ -10,7 +10,6 @@ class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         ans = []
         for x, y in zip_longest(word1, word2):
-            print(x,y)
             if x: ans.append(x)
             if y: ans.append(y)
         return ''.join(ans)
