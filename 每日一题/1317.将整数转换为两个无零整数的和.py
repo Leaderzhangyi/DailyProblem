@@ -12,7 +12,7 @@ class Solution:
         new = n
         while True:
             new = new - 1
-            flag += 1 
+            flag += 1   
             if str(new).count('0') == 0 and str(flag).count('0') == 0:
                 res.append(flag),res.append(new)
                 break
