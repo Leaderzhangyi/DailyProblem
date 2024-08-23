@@ -13,6 +13,18 @@
  * }
  */
 func swapPairs(head *ListNode) *ListNode {
+	dummy := &ListNode{0, head}
+	cur := dummy
+	for cur.Next != nil && cur.Next.Next != nil {
+		a := cur.Next
+		b := cur.Next.Next.Next
+		cur.Next = cur.Next.Next
+		cur.Next.Next = a
+		cur.Next.Next.Next = b
+		cur = cur.Next.Next
+	}
+
+	return dummy.Next
 
 }
 
