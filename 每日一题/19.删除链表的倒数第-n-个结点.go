@@ -28,13 +28,13 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 	dummy := &ListNode{0, head}
 	// 经典快慢指针
 	a := head
-	for i := 0; i < n+1; i++ {
-		if a == nil {
-			return head.Next // 处理一下
-		}
+	for i := 0; i < n; i++ {
+		// if a == nil {
+		// 	return head.Next // 处理一下
+		// }
 		a = a.Next
 	}
-	b := head
+	b := dummy
 	for a != nil {
 		a = a.Next
 		b = b.Next
